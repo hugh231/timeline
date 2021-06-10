@@ -1,0 +1,647 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header" style="padding-left:15px">
+
+
+			<a class="navbar-brand" href="index.php"><?php 
+  		  include('includes/php/practice_name.php');
+  		  ?></a>	  
+
+		  
+		 
+		  
+		  
+		  <div>
+		  <?php 
+		  
+		  include('includes/php/login_head.php');
+		  ?>
+
+	  		</div>
+
+	  
+		<div>
+  		<?php
+		
+  		include('includes/php/case_button.php');
+  		?>
+	</div>
+		
+		
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+       
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  
+		
+		  <style>
+			  
+			  
+			  .modal-general {
+				  width:494px;
+		 
+			  }
+			  .modal-general-input {
+			      width: 100%;
+				  height:44px;
+			      padding: 12px 20px;
+			      margin: 8px 0;
+			      display: inline-block;
+			      border: 1px solid #ccc;
+			      box-sizing: border-box;
+				  background:rgb(250, 255, 189);
+			  }
+			  .button-modal:hover {
+				  color:gray;
+			  }
+			  td{
+			      word-wrap:break-word
+			  }
+			  
+			  .b-print {
+			  	background:transparent;
+				color:rgba(248,248,248, 0.3);
+			  }
+			  
+			  .b-print:hover {
+				  color:gray;
+			  }
+			  </style>
+		  
+		  <script>
+			  
+			  $( function() {
+			    $( "#datepicker1a" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+				
+			  } );
+			  $( function() {
+				  $( "#datepicker2" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	  
+			  } );
+			  $( function() {
+				  $( "#datepicker3" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  $( function() {
+				  $( "#datepicker4" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  $( function() {
+				  $( "#datepicker5" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  $( function() {
+				  $( "#datepicker6" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker7" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker8" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker9" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker10" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker11" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	  
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker12" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker13" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+			  $( function() {
+				  $( "#datepicker14" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+  
+  
+			  $( function() {
+				  $( "#datepicker16" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	 
+			  } );
+  
+
+			  $( function() {
+				  $( "#datepicker17" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  
+			  $( function() {
+				  $( "#datepicker18" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  
+			  $( function() {
+				  $( "#datepicker19" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  $( function() {
+				  $( "#datepicker20" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  		$("#datepicker20").css("z-index", "1");
+			  } );
+			  
+			  $( function() {
+				  $( "#datepicker60" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  
+			  $( function() {
+				  $( "#datepicker61" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  
+			  $( function() {
+				  $( "#datepicker62" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  
+			  $( function() {
+				  $( "#datepicker63" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  
+			  $( function() {
+				  $( "#datepicker64" ).datepicker({ dateFormat: 'dd-mm-yy'}).val();
+			  	
+			  } );
+			  
+			  </script>
+		  
+
+  		 
+		 <style>
+		
+
+		 .sidenav {
+		     height: 100%;
+		     width: 60px;
+		    
+		     z-index: 1;
+		     top: 35px;
+		     left: 0;
+		    
+		     overflow-x: hidden;
+		     transition: 0.5s;
+		     padding-top: 40px;
+		 }
+
+		 .sidenav a {
+		     
+		     text-decoration: none;
+			 width:100%;
+		     display: block;
+		     transition: 0.3s;
+			 color:#336699;
+		 }
+
+		 .sidenav a:hover {
+			 color:#585858;
+		     
+		 }
+
+		 .sidenav .closebtn {
+		     position: absolute;
+			 float:right;
+			 width:25px;
+		     top: -5px;
+		     right: 30px;
+		     
+		 }
+
+		 #main {
+		     transition: margin-left .5s;
+		     padding: 16px;
+			 margin-left:350px;
+		 }
+		
+		 @media screen and (max-height: 450px) {
+		   .sidenav {padding-top: 15px;}
+		   .sidenav a {font-size: 18px;}
+		 }
+		  h3 {
+			  margin-top:20px;
+		  }
+		  .table {
+			  margin-top:20px;
+		  }
+		  .list-group-item {
+		  	background:white !important;
+			border:0;
+		  }
+		  .list-group-item:hover {
+		  	background-color:;
+		  }
+		  .panel-collapse {
+			  border-bottom:0;
+			   padding-bottom:0px;
+		  }
+		  .panel .panel-default .panel-group {
+			  border:0;
+			  padding:0;
+			  margin:0;
+			 padding-bottom:0px;
+			 background-color:transparent !important;
+	   	  -webkit-box-shadow: 0;
+	   	          box-shadow: 0;
+			  
+		  }
+		  .panel-heading {
+			  padding:0;
+		  }
+		  h3:hover {
+			  color:gray !important;
+		  }
+		  .li-dropdown1 {
+			  background:#ddd;
+		  }
+		  .li-dropdown {
+			  background:#ddd;
+		  }
+		 </style>
+		 
+		 
+  		<style type="text/css" media="print">
+			
+  			@page {
+				size:portrait;
+				
+			}
+			
+  			@media print {
+  				body, html {
+  					content:"";
+  					font: 10pt Arial;
+  					height:297mm;
+  					width:210mm;
+ 				 
+ 				 
+  				}
+  			  #mySidenav { 
+  				  display: none !important;
+  			      width:0px !important;
+ 				  height:0px;
+  			   }
+  			  .sidenav { 
+  				  display: none !important;
+  				  width:0px;
+  			  	 }
+   			  #form53 {
+   				  display:none;
+   			  } 
+   			  #span1 {
+   			  	  display:none;
+   			  }	 
+  			  /* Hide everything ... */
+  			  #main { display: block;
+ 				  margin-left:0%;
+ 				  
+  				  width:100%;
+ 				  overflow:visible;
+  				  }
+  			 }
+
+  				  .col-lg-9:before { 
+  					  height:100%;
+  					  overflow:visible;
+					
+  				  }
+  				  p.print:before {
+  					  display:block;
+  					  content: "TAX INVOICE";
+
+  				  }
+  				  p.print2:before {
+					  
+  					  content: "McLean Santoro Lawyers";
+  				  }
+  				  p.print3:before {
+					  
+  					  content: "61 Carrington Street";
+  				  }
+  				  p.print4:before {
+					  
+  					  content: "Adelaide, 5000";
+  				  }
+				  
+				  
+  				  @media print {
+  					  .col-lg-9 {
+  			  			overflow:visible;
+  					  }
+  				  }
+  				  .navbar-brand {
+  					  line-height:5px !important;
+  				  }
+				  
+			
+  			</style>
+		 
+		 
+	
+        <!-- Collect the nav links, forms, and other content for toggling -->
+<div id="mySidenav" class="sidenav" style="background-color:white;">
+			
+		  
+
+		
+ 	 <div style='margin-top:-38px'>
+	 
+ 		</div>
+		
+		
+		
+		
+		
+<div class="panel-group">
+  <div class="panel panel-default" style='margin-top:50px;border:0; border-bottom:0'>
+   
+		 
+
+			  
+		<li class="list-group-item li-dropdown1" style='background:#ddd; padding-bottom:50px'><button data-toggle='tooltip' data-placement='bottom' title='Enter New Case' class="button-modal" style='left:10px; color:white; background:grey; padding:0px; margin:0px; border-radius:50%; top:0px; width:40px; height:40px' onclick="document.getElementById('id01').style.display='block'" >C</button></li>	  
+  
+
+  		  <div id="id01" class="modal">
+
+  		    <form id='form3' class="modal-content modal-general animate" method="post" action="caseEntry_processing.php">
+
+
+  		      <div class="container-modal">
+
+  				<h3>New Case</h3>
+		
+
+				
+				
+
+		
+				<label>Description</label>
+  				<input class="form-control modal-general-input "  name='description' form='form3' required='required' autocomplete='off' />
+ 
+				<br/>
+	
+  		        <button class="button-modal-input" style="width:140px" type="submit" onclick>Submit</button>
+  				<br/><br/>
+  				<button class="button-modal-input" style="width:140px; background-color: #f44336" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+  				<br/><br/>
+  		      </div>
+
+
+  		    </form>
+  		  </div>
+		  
+				  <script>
+
+				  		$(document).ready(function(){
+
+				  		    $('.sel_field5').focus(function(){
+  
+
+				  		        $.ajax({
+				  		            url: 'GetClient_account3.php',
+				  		            type: 'post',
+				  		            dataType: 'json',
+				  		            success:function(response){
+
+				  		                var len = response.length;
+
+				  		                $('#sel_user5').empty();
+				  		                for( var i = 0; i<len; i++){
+				  		                    var id = response[i]['id'];
+				  		                    var name = response[i]['name'];
+				  							
+          
+				  		                    $('#sel_user5').append('<option value='+id+'> '+name+'</option>');
+			
+
+				  		                }
+				  		            }
+				  		        });
+				  		    });
+
+				  		});
+
+
+				  	</script>
+
+				  <li class="list-group-item li-dropdown1" style='padding-bottom:50px'><button data-toggle='tooltip' data-placement='bottom' title='Enter Facts' class="button-modal" style='left:10px; color:white; background:grey; padding:0px; margin:0px; border-radius:50%; top:0px; width:40px; height:40px' onclick="document.getElementById('id02').style.display='block'" >F</button></li>
+				  
+		  
+
+		  		  <div id="id02" class="modal">
+
+		  		    <form id='form4' class="modal-content modal-general animate" method="post" action="factEntry_processing.php">
+
+
+		  		      <div class="container-modal">
+    
+		  				<h3>Fact</h3>
+			
+	
+						<label>Case Name</label>
+		  				<select  name='caseID' style='background:rgb(250, 255, 189); width:460px; margin-bottom:20px' class='form-control sel_field5' form='form4' id='sel_user5'  >
+		  				            <option value='0'> - Make A Selection -</option>
+		  				        </select>
+						<label>Date</label>
+		  				<input class="form-control modal-general-input "  name='dater' id='datepicker5' form='form4' required='required' autocomplete='off' />
+	
+			
+						<label>Description (maximum 35 characters)</label>
+		  				<input class="form-control modal-general-input "  name='description' form='form4' required='required' autocomplete='off' maxlength='36' />
+	 
+						
+			
+						<br/>
+		  		        <button class="button-modal-input" style="width:140px" type="submit" onclick>Submit</button>
+		  				<br/><br/><br/>
+		  				<button class="button-modal-input" style="width:140px; background-color: #f44336" type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+		  				<br/><br/>
+		  		      </div>
+
+
+		  		    </form>
+		  		  </div>
+			
+			
+			
+			
+			
+			
+		
+		
+   			<ul class="nav nav-pills nav-stacked" role="tablist">
+
+   								  <script>
+
+   								  		$(document).ready(function(){
+
+   								  		    $('.sel_field65').focus(function(){
+
+
+   								  		        $.ajax({
+   								  		            url: 'GetClient_account3.php',
+   								  		            type: 'post',
+   								  		            dataType: 'json',
+   								  		            success:function(response){
+
+   								  		                var len = response.length;
+
+   								  		                $('#sel_user65').empty();
+   								  		                for( var i = 0; i<len; i++){
+   								  		                    var id = response[i]['id'];
+   								  							var name2 = response[i]['username'];
+   								  		                    var name = response[i]['name'];
+   								  							var mat = response[i]['Matter'];
+
+   								  		                    $('#sel_user65').append('<option value='+id+'> '+name+'</option>');
+
+
+   								  		                }
+   								  		            }
+   								  		        });
+   								  		    });
+
+   								  		});
+
+
+   								  	</script>
+
+  
+   						  <li class="list-group-item li-dropdown1" style='background:#bebebe; padding-bottom:42px'><button data-toggle='tooltip' data-placement='bottom' title='Enter Details' class="button-modal" style='left:10px; color:white; background:grey; padding:0px; margin:0px; border-radius:50%; top:0px; width:40px; height:40px' onclick="document.getElementById('id065').style.display='block'" >D</button></li>
+  
+  
+
+   						  		  <div id="id065" class="modal" >
+								  
+   									<form class="modal-content modal-general animate" style='width:240px; height:120px' class='form-horizontal' id='form65' name='form65' method='post' action='subfactEntry.php' data-enctype='multipart/form-data'>
+   										<div class="container-modal">
+   											<label style='vertical-align:center'>Select Case</label>
+   									<select onchange='this.form.submit(form65)' name='clientID2' style='background:rgb(250, 255, 189); color:gray; top:100px; width:200px' class='btn btn-primary btn-sm form-control sel_field65' id='sel_user65' >
+   									          <option value='0'>Select Case</option>
+   									      </select>
+										  
+
+   									  </div>
+   									</form>
+   						  		  </div>
+
+   				</ul>
+			
+			
+	<ul class="nav nav-pills nav-stacked" role="tablist">
+
+						  <script>
+
+						  		$(document).ready(function(){
+
+						  		    $('.sel_field66').focus(function(){
+
+
+						  		        $.ajax({
+						  		            url: 'GetClient_account3.php',
+						  		            type: 'post',
+						  		            dataType: 'json',
+						  		            success:function(response){
+
+						  		                var len = response.length;
+
+						  		                $('#sel_user66').empty();
+						  		                for( var i = 0; i<len; i++){
+						  		                    var id = response[i]['id'];
+						  							var name2 = response[i]['username'];
+						  		                    var name = response[i]['name'];
+						  							var mat = response[i]['Matter'];
+
+						  		                    $('#sel_user66').append('<option value='+id+'> '+name+'</option>');
+
+
+						  		                }
+						  		            }
+						  		        });
+						  		    });
+
+						  		});
+
+
+						  	</script>
+
+
+				  <li class="list-group-item li-dropdown1" style='background:#bebebe; position:absolute; bottom:200px;'><button data-toggle='tooltip' data-placement='bottom' title='Amend Facts or Details' class="button-modal" style='left:10px; color:white; background:orange; padding:0px; margin:0px; border-radius:50%;  width:40px; height:40px' onclick="document.getElementById('id066').style.display='block'" >A</button></li>
+
+
+
+				  		  <div id="id066" class="modal" >
+						  
+							<form class="modal-content modal-general animate" style='width:240px; height:120px' class='form-horizontal' id='form66' name='form66' method='post' action='amend.php' data-enctype='multipart/form-data'>
+								<div class="container-modal">
+									<label style='vertical-align:center'>Select Case</label>
+							<select onchange='this.form.submit(form66)' name='clientID2' style='background:rgb(250, 255, 189); color:gray; top:100px; width:200px' class='btn btn-primary btn-sm form-control sel_field66' id='sel_user66' >
+							          <option value='0'>Select Case</option>
+							      </select>
+								  
+
+							  </div>
+							</form>
+				  		  </div>
+
+		</ul>
+	   
+
+  	  
+   	</div>
+	   
+		  
+
+	  
+		      </div>
+	  
+      
+		    </div>
+		  </div>
+	  
+		
+	
+			
+	
+			
+			
+
+
+
+
+<script>
+	$('ul.nav li.dropdown').hover(function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+	</script>
+
+        <div id="main" style="background:transparent; overflow:hidden; padding:5px; margin-top:100px; margin-left:260px">
+		<!-- <span style="margin-left:10px;color:#F5F5F5; font-size:48px; font-weight:bold">CASE</span><span style="margin-left:250px; color:#F5F5F5; font-size:48px; font-weight:bold">FACT</span><span style="margin-left:210px; color:#F5F5F5; font-size:48px; font-weight:bold">DETAIL</span> -->
+			

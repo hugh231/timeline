@@ -1,0 +1,35 @@
+<button class="button-modal" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+		  <div id="id01" class="modal">
+  
+		    <form class="modal-content animate" method="post" action="login.php">
+
+
+		      <div class="container-modal">
+		        
+		        <input class="login_input" type="text" placeholder="Enter Username" name="username" required autofocus>
+				<br/>
+		       
+		        <input class="login_input" type="password" placeholder="Enter Password" name="password" required>
+       		 	<br/><br/>
+		        <button class="button-modal-input" style="width:84%; margin:auto; right:8%; background-color:#00e600" type="submit" onclick>Login</button>
+				<br/><br/><br/>
+				<button class="button-modal-input" style="background-color: #f44336; width:84%; margin:auto; right:8%" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<br/><br/>
+		      </div>
+
+
+		    </form>
+		  </div>
+
+		  <script>
+		  // Get the modal
+		  var modal = document.getElementById('id01');
+
+		  // When the user clicks anywhere outside of the modal, close it
+		  window.onclick = function(event) {
+		      if (event.target == modal) {
+		          modal.style.display = "none";
+		      }
+		  }
+		  </script>
